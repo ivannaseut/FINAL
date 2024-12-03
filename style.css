@@ -71,5 +71,12 @@ body {
     height: 200px;
     object-fit: cover;
     margin-bottom: 10px;
-    
+}
+
+/*Estilos de pie de página*/
+footer {
+    background-color: blanchedalmond;
+    color: brown;
+    text-align: center;
+    padding: 10px 0;
 }
