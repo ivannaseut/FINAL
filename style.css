@@ -27,3 +27,23 @@ body {
 .nav-links li {
     margin-left: 20px;
 }
+
+.hero {
+    background-image: url("https://th.bing.com/th/id/OIP.wnoHX4gkpmGcvoN-bKFn4QHaFR?rs=1&pid=ImgDetMain");
+    background-size: cover;
+    text-align: center;
+    color: brown;
+    padding: 100px 0;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    
+}
