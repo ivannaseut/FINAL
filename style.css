@@ -12,7 +12,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: beige;
+    background-color: rg(163, 145, 107);
 }
 
 .nav-links {
@@ -28,11 +28,16 @@ body {
     margin-left: 20px;
 }
 
+.nav-links li a {
+    color: black; /*cambiar color de enlaces*/
+    text-decoration: none; /*quitar subrayado*/
+}
+
 .hero {
     background-image: url("https://blog.grancoffee.com.br/wp-content/uploads/sites/2/2020/06/20506_BlogPost_imagem_interna_4-1024x373.png");
     background-size: cover;
     text-align: center;
-    color: brown;
+    color: black;
     padding: 100px 0;
 }
 
@@ -44,15 +49,27 @@ body {
 
 .hero h2 {
     font-size: 3rem;
-    margin-bottom: 20px;
-    
+    margin-bottom: 20px;   
+}
+
+.contenedor-boton {
+    padding-top: 35px;
+}
+
+.boton-menu {
+    margin: 15px;
+    padding: 5px;
+    border-radius: 56px;
+
 }
 
 /*Sección de productos*/
-.featured-products {
+.featured-products, .postres,.equipo {
     padding: 50px;
     text-align: center;
-
+    color: rgb(121, 77, 77);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
 }
 
 .product-list {
@@ -66,12 +83,57 @@ body {
     margin-bottom: 30px;
 }
 
+
 .product img {
     width: 100%;
     height: 200px;
     object-fit: cover;
     margin-bottom: 10px;
+    
 }
+
+.postres {
+    padding: 50px;
+    text-align: center;
+}
+
+.grid container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax (300px, 1fr));
+    gap: 30px; /*espaciado*/
+    
+}
+
+.postre img {
+    width: 100px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.equipo {
+    text-align: center;
+}
+.equipo-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.miembro {
+    width: 200px;
+    margin-bottom: 35px;
+}
+
+/*Sección de personal*/
+.miembro img {
+    width: 150%;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+{}
 
 /*Estilos de pie de página*/
 footer {
