@@ -133,7 +133,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-{}
+}
 
 /*Estilos de pie de página*/
 footer {
@@ -141,4 +141,42 @@ footer {
     color: brown;
     text-align: center;
     padding: 10px 0;
+}
+
+.footer-container {
+    
+}
+
+.social-media {
+    margin-bottom: 25px;
+}
+
+.social-media a {
+    /*colores y tamaños de mis íconos*/
+    color: brown;
+    margin: 0 10px;
+    font-size: 24px;
+
+}
+
+.newsletter {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.newsletter input [type="e-mail"] {
+    padding: 8px;
+    border: 1px solid cornflowerblue;
+    border-top-left-radius: 4px;
+    margin-bottom: 10px;
+
+}
+
+.newsletter button [type="submit"] {
+    background-color: aliceblue;
+    padding: 8px 16px;
+    border: none;
+    border-top-left-radius: 4px;
+    cursor: pointer;
+    
 }
