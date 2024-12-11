@@ -1,0 +1,188 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rg(163, 145, 107);
+}
+
+.nav-links {
+    /*quitar viñetas*/
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    color: #264653; /*cambiar color de enlaces*/
+    text-decoration: none; /*quitar subrayado*/
+}
+
+
+/*Estilos, sección: hero*/
+.hero {
+    background-image: url("https://blog.grancoffee.com.br/wp-content/uploads/sites/2/2020/06/20506_BlogPost_imagem_interna_4-1024x373.png");
+    background-size: cover;
+    text-align: center;
+    color: #264653;
+    padding: 100px 0;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;   
+}
+
+.contenedor-boton {
+    padding-top: 35px;
+}
+
+.boton-menu {
+    margin: 15px;
+    padding: 5px;
+    border-radius: 56px;
+    background-color: #264653;
+    color: whitesmoke;
+}
+
+/*Sección de productos*/
+.limitado,.equipo {
+    padding: 50px;
+    text-align: center;
+    color: #f4a261;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+}
+
+/*Sección: sandwiches*/
+.limitado {
+    padding: 50px;
+    text-align: center;
+}
+
+.grid-limit {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /*4 Columnas de igual tamaño*/
+    grid-template-rows: repeat(2, 260px); /*2 Filas de 250px*/
+    gap: 20px; /*Espaciado entre cajitas*/
+    grid-template-areas:
+    "navidad1 navidad1 navidad2 navidad3"
+    "navidad1 navidad1 navidad4 navidad5";
+}
+
+.navidad {
+    border: 1px solid gray;
+    padding: 20px;
+}
+
+.navidad img{
+    width: 180px;
+    height: 200px;
+    margin: auto;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/*Asignar areas a los sandwiches*/ 
+.navidad:nth-child(1) {grid-area: navidad1;}
+.navidad:nth-child(2) {grid-area: navidad2;}
+.navidad:nth-child(3) {grid-area: navidad3;}
+.navidad:nth-child(4) {grid-area: navidad4;}
+.navidad:nth-child(5) {grid-area: navidad5;}
+
+/*Sección: personal*/
+.equipo {
+    background-color: aquamarine;
+    display: flexbox;
+}
+
+.equipo-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.miembro {
+    width: 200px;
+    margin-bottom: 35px;
+    text-align: right;
+}
+
+.miembro img {
+    width: 150%;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Estilos de pie de página*/
+footer {
+    background-color: blanchedalmond;
+    color: brown;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: antiquewhite;
+}
+
+.social-media {
+    margin-bottom: 25px;
+}
+
+.social-media a { /*enlaces*/
+    /*colores y tamaños de mis íconos*/
+    color: brown;
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+.newsletter {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.newsletter input [type="e-mail"] {
+    padding: 8px;
+    border: 1px solid cornflowerblue;
+    border-top-left-radius: 4px;
+    margin-bottom: 10px;
+
+}
+
+.newsletter button [type="submit"] {
+    background-color: aliceblue;
+    color: #f4a261;
+    padding: 8px;
+    border: 2px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+}
+

@@ -1,0 +1,117 @@
+@media screen and (max-width:320px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-links {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+    }
+    .nav-links li {
+        margin: 10px 0;
+    }
+    .hero h2 {
+        font-size: 2rem;
+    }
+}
+
+/*celulares estándar*/
+@media(min-width: 482px) and (max-width: 800px) {
+    body {
+        font-size: 14px;
+    }
+    header {
+        font-size: 20px;
+        padding: 15px;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .nav-links {
+        flex-direction: column;
+    }
+    .hero h2 {
+        font-size: 2rem;
+    }
+    }
+
+/*tablets estándar*/
+@media(min-width: 768px) and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+    header {
+        font-size: 20px;
+        padding: 20px;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 30px;
+    }
+    .nav-links {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .hero h2 {
+        font-size: 3rem;
+    }
+    footer {
+        font-size: 14px;
+    }
+    }
+
+/*laptops estándar*/
+@media(min-width: 1025px) and (max-width: 1440px) {
+    body {
+        font-size: 18px;
+    }
+    header {
+        font-size: 28px;
+        padding: 25px;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-links {
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+    .hero h2 {
+        font-size: 3rem;
+    }
+    footer {
+        font-size: 16px;
+    }
+}
+
+/*escritorios*/
+@media(min-width: 1441px) {
+    body {
+        font-size: 20px;
+    }
+    header {
+        font-size: 32px;
+        padding: 30px;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-links {
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+    .hero h2 {
+        font-size: 3rem;
+    }
+    footer {
+        font-size: 16px;
+    }
+}

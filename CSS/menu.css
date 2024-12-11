@@ -29,15 +29,17 @@ body {
 }
 
 .nav-links li a {
-    color: black; /*cambiar color de enlaces*/
+    color: #264653; /*cambiar color de enlaces*/
     text-decoration: none; /*quitar subrayado*/
 }
 
+
+/*Estilos, sección: hero*/
 .hero {
     background-image: url("https://blog.grancoffee.com.br/wp-content/uploads/sites/2/2020/06/20506_BlogPost_imagem_interna_4-1024x373.png");
     background-size: cover;
     text-align: center;
-    color: black;
+    color: #264653;
     padding: 100px 0;
 }
 
@@ -60,14 +62,15 @@ body {
     margin: 15px;
     padding: 5px;
     border-radius: 56px;
-
+    background-color: #264653;
+    color: whitesmoke;
 }
 
 /*Sección de productos*/
 .featured-products, .postres,.equipo {
     padding: 50px;
     text-align: center;
-    color: rgb(121, 77, 77);
+    color: #f4a261;
     font-family: Georgia, 'Times New Roman', Times, serif;
     
 }
@@ -83,7 +86,6 @@ body {
     margin-bottom: 30px;
 }
 
-
 .product img {
     width: 100%;
     height: 200px;
@@ -92,15 +94,11 @@ body {
     
 }
 
-.postres {
-    padding: 50px;
-    text-align: center;
-}
-
-.grid container {
+/*Sección: postres*/
+.grid-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax (300px, 1fr));
-    gap: 30px; /*espaciado*/
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr)); /*responsiva*/
+    gap: 30px; 
     
 }
 
@@ -108,11 +106,16 @@ body {
     width: 100px;
     height: 200px;
     object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
+/*Sección: personal*/
 .equipo {
-    text-align: center;
+    background-color: aquamarine;
+    display: flexbox;
 }
+
 .equipo-container {
     display: flex;
     justify-content: space-around;
@@ -122,9 +125,9 @@ body {
 .miembro {
     width: 200px;
     margin-bottom: 35px;
+    text-align: right;
 }
 
-/*Sección de personal*/
 .miembro img {
     width: 150%;
     height: 150px;
@@ -144,19 +147,21 @@ footer {
 }
 
 .footer-container {
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: antiquewhite;
 }
 
 .social-media {
     margin-bottom: 25px;
 }
 
-.social-media a {
+.social-media a { /*enlaces*/
     /*colores y tamaños de mis íconos*/
     color: brown;
     margin: 0 10px;
     font-size: 24px;
-
 }
 
 .newsletter {
@@ -174,43 +179,9 @@ footer {
 
 .newsletter button [type="submit"] {
     background-color: aliceblue;
-    padding: 8px 16px;
-    border: none;
-    border-top-left-radius: 4px;
+    color: #f4a261;
+    padding: 8px;
+    border: 2px solid black;
+    border-radius: 4px;
     cursor: pointer;
-    
 }
-
-.sandwiches{
-    padding: 50px;
-    text-align: center;
-}
-
-.grid-sandwich{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /*4 Columnas de igual tamaño*/
-    grid-template-rows: repeat(2, 260px); /*2 Filas de 250px*/
-    gap: 20px; /*Espaciado entre cajitas*/
-    grid-template-areas:
-    "sandwich1 sandwich1 sandwich2 sandwich3"
-    "sandwich1 sandwich1 sandwichPollo sandwich5";
-}
-
-.sandwich{
-    border: 1px solid gray;
-    padding: 20px;
-}
-
-.sandwich img{
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    margin-bottom: 10px;
-}
-
-/*Asignar areas a los sandwiches*/ 
-.sandwich:nth-child(1) {grid-area: sandwich1;}
-.sandwich:nth-child(2) {grid-area: sandwich2;}
-.sandwich:nth-child(3) {grid-area: sandwich3;}
-.sandwich:nth-child(4) {grid-area: sandwichPollo;}
-.sandwich:nth-child(5) {grid-area: sandwich5;}

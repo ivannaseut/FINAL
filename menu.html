@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/menu.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
     <title>Menu</title>
 </head>
 <body>
@@ -21,51 +22,134 @@
         </nav>
     </header>
 
+    <!--ENCABEZADO-->
     <section class="hero">
         <div class="hero-content">
             <h2>El mejor café de Orizaba</h2>
             <p>Disfruta de una experiencia única con nuestro café orgánico de la región de las Altas Montañas.</p>
             <div class="contenedor-boton">
-                <button class="boton-menu">Ver Menú</button>
+                <button class="boton-menu">Ubicación</button>
+            <div class="barra">
+                <ul class="nav-links">
+                    <li> <a href="#">Bebidas calientes</a></li>
+                    <li> <a href="#">Bebidas frías</a></li>
+                    <li> <a href="#">Postres</a></li>
+                    <li> <a href="#">Trenzas</a></li>
+                </ul>
+            </div>
             </div>
             
         </div>
     </section>
 
-    <section class="sandwiches">
-        <h2>Nuestros Sandwiches</h2>
-        <div class="grid-sandwich">
-
-            <div class="sandwich"> 
-                <img src="https://images.aws.nestle.recipes/original/0dcdbe631b092077fd7e411236c4b06d_sandwich_de_pollo_a_las_finas_hierbas_-_mx_ponte_bien.jpg" alt="">
-                <h3>Sandwich de Pollo</h3>
-                <p>Lorem ipsum dolor, </p>
+    <!--BEBIDAS CAlIENTES-->
+    <section class="featured-products">
+        <h2>Bebidas</h2>
+        <div class="product-list">
+            <!--Bebida #1-->
+            <div class="product">
+                <img src="https://www.foodandwine.com/thmb/9JyfZPcxlV9ubEeuSznhO-M4q0w=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Partners-Americano-FT-BLOG0523-b8e18cc340574cc9bed536cceeec7082.jpg" alt="bebida 1">
+                <h3>Café Ameyalli</h3>
+                <p>Café americano con un toque de vainilla y canela.</p>
             </div>
-
-            <div class="sandwich"> 
-                <img src="https://images.aws.nestle.recipes/original/0dcdbe631b092077fd7e411236c4b06d_sandwich_de_pollo_a_las_finas_hierbas_-_mx_ponte_bien.jpg" alt="">
-                <h3>Sandwich de Pollo</h3>
-                <p>Lorem ipsum dolor, </p>
+            <!--Bebida #2-->
+            <div class="product">
+                <img src="https://img.freepik.com/fotos-premium/taza-capuchino-caramelo_322067-226.jpg" alt="bebida 2">
+                <h3>Cappuccino dulce</h3>
+                <p>Capuchino clásico con un toque de caramelo.</p>
             </div>
-
-            <div class="sandwich"> 
-                <img src="https://images.aws.nestle.recipes/original/0dcdbe631b092077fd7e411236c4b06d_sandwich_de_pollo_a_las_finas_hierbas_-_mx_ponte_bien.jpg" alt="">
-                <h3>Sandwich de Pollo</h3>
-                <p>Lorem ipsum dolor, </p>
+            <!--Bebida #3-->
+            <div class="product">
+                <img src="https://brookrest.com/wp-content/uploads/2020/05/AdobeStock_315919556-scaled.jpeg" alt="bebida 3">
+                <h3>Latte nostálgico</h3>
+                <p>Latte de café con leche y miel.</p>
             </div>
-
-            <div class="sandwich"> 
-                <img src="https://images.aws.nestle.recipes/original/0dcdbe631b092077fd7e411236c4b06d_sandwich_de_pollo_a_las_finas_hierbas_-_mx_ponte_bien.jpg" alt="">
-                <h3>Sandwich de Pollo</h3>
-                <p>Lorem ipsum dolor,</p>
+            <!--Bebida #4-->
+            <div class="product">
+                <img src="https://www.glenwoodnyc.com/wp-content/uploads/2019/01/brown-chocolate-close-up-1128976-1.jpg" alt="bebida 4">
+                <h3>Chocolate caliente</h3>
+                <p>Incluye bombones derretidos.</p>
             </div>
-
-            <div class="sandwich"> 
-                <img src="https://images.aws.nestle.recipes/original/0dcdbe631b092077fd7e411236c4b06d_sandwich_de_pollo_a_las_finas_hierbas_-_mx_ponte_bien.jpg" alt="">
-                <h3>Sandwich de Pollo</h3>
-                <p>Lorem ipsum dolor,</p>
+            <!--Bebida #5-->
+            <div class="product">
+                <img src="https://img.freepik.com/premium-photo/cup-green-tea-with-pattern-foam-it_732812-165.jpg" alt="bebida 5">
+                <h3>Matcha Ameyalli</h3>
+                <p>Té matcha latte con leche y un toque de miel.</p>
             </div>
+            <!--Bebida #6-->
+            <div class="product">
+                <img src="https://images.anaca3.com/wp-content/uploads/2018/01/perdre-du-poids-avec-l-infusion-de-fruits-rouges-1000x516.jpg" alt="bebida 6">
+                <h3>Té de frutos rojos</h3>
+                <p>Infusión caliente de frutos rojos con menta fresca.</p>
+            </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--POSTRES-->
+    <section class="postres">
+        <h2>Nuestros deliciosos postres </h2>
+        <div class="grid-container">
+            <!--postre1-->
+            <div class="postre">
+                <img src="https://bing.com/th?id=OSK.29191f4e9db24ae6ad9e861224865d4b" alt="fresas">
+                <h3>fresas con crema</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum amet labore voluptatibus rem exercitationem perspiciatis cumque. Dignissimos sed quidem laudantium facilis, veritatis expedita aliquam eos illo iste, repudiandae molestias nesciunt.</p>
+            </div>
+            <!--postre2-->
+            <div class="postre">
+                <img src="https://th.bing.com/th/id/OIP.cwoYm3U0K2Ms16Gp3uPGDgHaE7?rs=1&pid=ImgDetMain" alt="pastel">
+                <h3>pastel de chocolate</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum amet labore voluptatibus rem exercitationem perspiciatis cumque. Dignissimos sed quidem laudantium facilis, veritatis expedita aliquam eos illo iste, repudiandae molestias nesciunt.</p>
+            </div>
+            <!--postre3-->
+            <div class="postre">
+                <img src="https://cdn.kiwilimon.com/recetaimagen/29890/31885.jpg" alt="gela">
+                <h3>gelatina de mango</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum amet labore voluptatibus rem exercitationem perspiciatis cumque. Dignissimos sed quidem laudantium facilis, veritatis expedita aliquam eos illo iste, repudiandae molestias nesciunt.</p>
+            </div>
+            <!--postre4-->
+            <div class="postre">
+                <img src="https://cdn.kiwilimon.com/recetaimagen/29890/31885.jpg" alt="gela">
+                <h3>gelatina de mango</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum amet labore voluptatibus rem exercitationem perspiciatis cumque. Dignissimos sed quidem laudantium facilis, veritatis expedita aliquam eos illo iste, repudiandae molestias nesciunt.</p>
+            </div>
+            <!--postre5-->
+            <div class="postre">
+                <img src="https://cdn.kiwilimon.com/recetaimagen/29890/31885.jpg" alt="gela">
+                <h3>gelatina de mango</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum amet labore voluptatibus rem exercitationem perspiciatis cumque. Dignissimos sed quidem laudantium facilis, veritatis expedita aliquam eos illo iste, repudiandae molestias nesciunt.</p>
+            </div>
+            <!--postre6-->
+            <div class="postre">
+                <img src="https://cdn.kiwilimon.com/recetaimagen/29890/31885.jpg" alt="gela">
+                <h3>gelatina de mango</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum amet labore voluptatibus rem exercitationem perspiciatis cumque. Dignissimos sed quidem laudantium facilis, veritatis expedita aliquam eos illo iste, repudiandae molestias nesciunt.</p>
+            </div>
+        </div>
+    </section>
 
+    <section class="equipo">
+        <h2>Nuestro equipo</h2>
+        <div class="equipo-container">
+            <!--miembro 1-->
+            <div class="miembro">
+                <img src="https://blogstudio.s3.theshoppad.net/coffeeheroau/d4459a5d44905ff2cf3c245e7a931675.jpg" alt="barista">
+                <h3>Uri de Jesús</h3>
+                <p>Barista</p>
+            </div>
+            <!--miembro 2-->
+            <div class="miembro">
+                <img src="https://th.bing.com/th/id/OIP.sDDnVHzSzhmezJDHZBBKgAHaE8?rs=1&pid=ImgDetMain" alt="mesera">
+                <h3>Giannina</h3>
+                <p>Mesera</p>
+            </div>
+            <!--miembro 3-->
+            <div class="miembro">
+                <img src="https://www.heraldo.es/uploads/imagenes/2014/06/11/_imagenlacafeteria_c2b3c775.jpg" alt="chef">
+                <h3>Ángel Eduardo</h3>
+                <p>Chef</p>
+            </div>
         </div>
     </section>
 
@@ -86,7 +170,6 @@
         </div>
         <p>&copy; 2024 Ameyalli</p>
     </footer>
-
     <script src="main.js"></script>
 </body>
 </html>
