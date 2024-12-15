@@ -1,45 +1,62 @@
 * {
-    padding: 0%;
     margin: 0%;
+    padding: 0%;
 }
 
 body {
     font-family: 'Times New Roman', Times, serif;
+    background-color: #59392b;
+    color: #EED9C4;
 }
 
 .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: rg(163, 145, 107);
+    background-color: #59392b;
+    color: #EED9C4;
+    padding: 15px 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.navbar:hover {
+    background-color: #4a2d1f;
 }
 
 .nav-links {
-    /*quitar viñetas*/
-    list-style: none;
-    margin: 0%;
-    padding: 0%;
+    list-style: none; /*Quitar viñetas*/
     display: flex;
-
+    align-items: center;
 }
 
 .nav-links li {
-    margin-left: 20px;
+    margin-inline-start: 30vh;
 }
 
 .nav-links li a {
-    color: #264653; /*cambiar color de enlaces*/
-    text-decoration: none; /*quitar subrayado*/
+    color: #EED9C4;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
 }
 
+.nav-links li a:hover {
+    color: #db6607;
+}
 
 /*Estilos, sección: hero*/
 .hero {
     background-image: url("https://blog.grancoffee.com.br/wp-content/uploads/sites/2/2020/06/20506_BlogPost_imagem_interna_4-1024x373.png");
     background-size: cover;
     text-align: center;
-    color: #264653;
+    color: #59392b;
     padding: 100px 0;
 }
 
@@ -51,23 +68,47 @@ body {
 
 .hero h2 {
     font-size: 3rem;
+    background-color: #EED9C4;
     margin-bottom: 20px;   
 }
 
-.contenedor-boton {
-    padding-top: 35px;
+.hero p {
+    font-size: 1.2rem;
+    background-color: #EED9C4;
+    margin-bottom: 20px;   
+    padding: 5px;
 }
 
-.boton-menu {
+.barra {
+    padding-top: 30px;
+}
+
+.nav-barras {
+    list-style: none; /*Quitar viñetas*/
+    display: flex;
+    align-items: center;
+}
+
+.nav-barras a {
+    text-decoration: none;
     margin: 15px;
     padding: 5px;
-    border-radius: 56px;
-    background-color: #264653;
-    color: whitesmoke;
+    border-radius: 56px; 
+    background-color: #db6607;
+    color: #EED9C4;
+}
+
+.nav-barras a:hover {
+    text-decoration: none;
+    margin: 15px;
+    padding: 5px;
+    border-radius: 56px; 
+    background-color: #f4a261;
+    color: #59392b;
 }
 
 /*Sección de productos*/
-.featured-products, .postres,.equipo {
+.bebidas1, .bebidas2, .postres {
     padding: 50px;
     text-align: center;
     color: #f4a261;
@@ -75,10 +116,20 @@ body {
     
 }
 
-.product-list {
+.product p, .producto p, .postre p {
+    color: #EED9C4;
+}
+
+.bebidas1 h2, .bebidas2 h2, .postres h2 {
+    margin: 20px;
+    color: #db6607;
+}
+
+.calientes {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    background-color: #361e13
 }
 
 .product {
@@ -91,7 +142,28 @@ body {
     height: 200px;
     object-fit: cover;
     margin-bottom: 10px;
-    
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.frías {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.producto {
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+.producto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 /*Sección: postres*/
@@ -99,49 +171,98 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px,1fr)); /*responsiva*/
     gap: 30px; 
-    
 }
 
 .postre img {
-    width: 100px;
+    width: 200px;
     height: 200px;
     object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
-/*Sección: personal*/
-.equipo {
-    background-color: aquamarine;
-    display: flexbox;
+/*Sección: trenzas*/
+.comida {
+    background-color: rgb(170, 92, 18);
+    display: block;
+    color: #160a05;
+    text-align: center;
+    padding: 18px;
 }
 
-.equipo-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+.trenzas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    justify-content: center; 
+    align-items: center; 
 }
 
-.miembro {
+.pan {
     width: 200px;
-    margin-bottom: 35px;
-    text-align: right;
+    margin: 20px;
+    text-align: center;
+    background-color: #59392b;
+    border-style: dotted;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
-.miembro img {
-    width: 150%;
-    height: 150px;
+.pan:hover {
+    width: 200px;
+    margin: 20px;
+    text-align: center;
+    background-color: #99370e;
+    border-style: groove;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.pan h3 {
+    color: #240b00;
+    text-align: center;
+}
+
+.pan p {
+    color: #EED9C4;
+    text-align: center;
+}
+
+.pan img {
+    width: 100%;
+    height: auto;
     border-radius: 50%;
     object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.video {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.video iframe {
+    width: 100%;
+    max-width: 560px; 
+    height: auto;
+}
+
+.video h3, .video p {
+    text-align: center;
+    margin-top: 10px;
+    width: 100%; 
+    max-width: 560px; 
 }
 
 /*Estilos de pie de página*/
 footer {
-    background-color: blanchedalmond;
-    color: brown;
+    background-color: #ae6252;
+    color: #EED9C4;
     text-align: center;
     padding: 10px 0;
 }
@@ -150,38 +271,37 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: antiquewhite;
+    background-color: #ae6252;
 }
 
-.social-media {
-    margin-bottom: 25px;
-}
-
-.social-media a { /*enlaces*/
-    /*colores y tamaños de mis íconos*/
-    color: brown;
-    margin: 0 10px;
-    font-size: 24px;
-}
-
+/**Sección: newsletter*/
 .newsletter {
     text-align: center;
     margin-bottom: 20px;
+    background-color: #ae6252;
 }
 
-.newsletter input [type="e-mail"] {
+.newsletter input[type= "e-mail"] {
     padding: 8px;
-    border: 1px solid cornflowerblue;
+    border: 1px solid #854b3c;
     border-top-left-radius: 4px;
     margin-bottom: 10px;
-
 }
 
-.newsletter button [type="submit"] {
-    background-color: aliceblue;
-    color: #f4a261;
+.newsletter button[type= "submit"] {
+    background-color: #8d3f00;
     padding: 8px;
-    border: 2px solid black;
+    border: 2px solid #9c280b;
+    color: #160a05;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.newsletter button[type= "submit"]:hover {
+    background-color: #034F1B;
+    padding: 8px;
+    border: 2px solid #d86b3c;
+    color: #160a05;
     border-radius: 4px;
     cursor: pointer;
 }

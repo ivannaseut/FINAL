@@ -1,45 +1,62 @@
 * {
-    padding: 0%;
     margin: 0%;
+    padding: 0%;
 }
 
 body {
     font-family: 'Times New Roman', Times, serif;
+    background-color: #59392b;
+    color: #EED9C4;
 }
 
 .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: rg(163, 145, 107);
+    background-color: #59392b;
+    color: #EED9C4;
+    padding: 15px 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.navbar:hover {
+    background-color: #4a2d1f;
 }
 
 .nav-links {
-    /*quitar viñetas*/
-    list-style: none;
-    margin: 0%;
-    padding: 0%;
+    list-style: none; /*Quitar viñetas*/
     display: flex;
-
+    align-items: center;
 }
 
 .nav-links li {
-    margin-left: 20px;
+    margin-inline-start: 30vh;
 }
 
 .nav-links li a {
-    color: #264653; /*cambiar color de enlaces*/
-    text-decoration: none; /*quitar subrayado*/
+    color: #EED9C4;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
 }
 
+.nav-links li a:hover {
+    color: #db6607;
+}
 
 /*Estilos, sección: hero*/
 .hero {
     background-image: url("https://blog.grancoffee.com.br/wp-content/uploads/sites/2/2020/06/20506_BlogPost_imagem_interna_4-1024x373.png");
     background-size: cover;
     text-align: center;
-    color: #264653;
+    color: #59392b;
     padding: 100px 0;
 }
 
@@ -51,7 +68,16 @@ body {
 
 .hero h2 {
     font-size: 3rem;
+    background-color: #EED9C4;
     margin-bottom: 20px;   
+}
+
+.hero p {
+
+    font-size: 1.2rem;
+    background-color: #EED9C4;
+    margin-bottom: 20px;   
+    padding: 5px;
 }
 
 .contenedor-boton {
@@ -62,73 +88,156 @@ body {
     margin: 15px;
     padding: 5px;
     border-radius: 56px;
-    background-color: #264653;
-    color: whitesmoke;
+    background-color: #59392b;
+    color: #EED9C4;
 }
 
 /*Sección de productos*/
 .limitado,.equipo {
     padding: 50px;
     text-align: center;
-    color: #f4a261;
+    background-color: #ae6252;
+    color: #8d3f00;
     font-family: Georgia, 'Times New Roman', Times, serif; 
 }
 
-/*Sección: sandwiches*/
+/*Sección: navidad*/
 .limitado {
-    padding: 50px;
+    position: relative;
+    padding: 8px;
+}
+
+.limitado h2 {
+    padding: 23px;
     text-align: center;
+    color: #59392b;
 }
 
 .grid-limit {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /*4 Columnas de igual tamaño*/
-    grid-template-rows: repeat(2, 260px); /*2 Filas de 250px*/
-    gap: 20px; /*Espaciado entre cajitas*/
+    grid-template-rows: repeat(2, 250px); /*2 Filas de 250px*/
+    gap: 34px; /*Espaciado entre cajitas*/
     grid-template-areas:
     "navidad1 navidad1 navidad2 navidad3"
     "navidad1 navidad1 navidad4 navidad5";
+    justify-items: center;
+    align-items: center;
 }
 
 .navidad {
-    border: 1px solid gray;
-    padding: 20px;
+    position: relative;
+    display: flex; 
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+    flex-direction: column;
+    text-align: center;
+    border: 5px solid #db6607;
+    padding: 15px;
+    margin: 10px;
+    width: 100%;
+    background-color: #854b3c;
+    height: 100%;
 }
 
-.navidad img{
-    width: 180px;
-    height: 200px;
-    margin: auto;
+.navidad:hover {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    border: 5px solid #db6607;
+    padding: 15px;
+    margin: 10px;
+    background-color: #034F1B;
+}
+
+.navidad img {
+    display: block;
+    width: 250px;
+    height: 180px;
     object-fit: cover;
-    margin-bottom: 10px;
 }
 
-/*Asignar areas a los sandwiches*/ 
+.navidad h3 {
+    color: #7E121D;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.navidad p {
+    margin: 0;
+    color: #EED9C4;
+    background-color: rgba(240, 109, 109, 0.6);
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center; /* Centrado vertical */
+    justify-content: center; /* Centrado horizontal */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;/
+}
+
+.navidad:hover p {
+    opacity: 1; /* Muestra el texto al pasar el mouse */
+    visibility: visible;
+}
+
+/*Asignar áreas a los platillos*/ 
 .navidad:nth-child(1) {grid-area: navidad1;}
 .navidad:nth-child(2) {grid-area: navidad2;}
 .navidad:nth-child(3) {grid-area: navidad3;}
 .navidad:nth-child(4) {grid-area: navidad4;}
 .navidad:nth-child(5) {grid-area: navidad5;}
 
-/*Sección: personal*/
-.equipo {
-    background-color: aquamarine;
+/*Sección: servicios*/
+.servicios {
+    background-color:#59392b;
+    color: rgb(189, 160, 162);
     display: flexbox;
+    padding: 19px;
 }
 
-.equipo-container {
+.servicios h2 {
+    text-align: center;
+padding: 10px;
+}
+
+.service-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    padding: 10px;
 }
 
-.miembro {
+.service {
     width: 200px;
     margin-bottom: 35px;
     text-align: right;
+    background-color: #8d3f00;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /*transición suave*/
 }
 
-.miembro img {
+.service:hover {
+    transform: translateY(-10px); /*elemento se mueve ligeramente hacia arrib*/
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /*sombra ligera */
+}
+
+.service p {
+    color: #f4a261;
+    text-align: right;
+    font-size: 15px;
+}
+
+.service h3 {
+    color: #f85514;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.service img {
     width: 150%;
     height: 150px;
     border-radius: 50%;
@@ -140,8 +249,8 @@ body {
 
 /*Estilos de pie de página*/
 footer {
-    background-color: blanchedalmond;
-    color: brown;
+    background-color: #ae6252;
+    color: #EED9C4;
     text-align: center;
     padding: 10px 0;
 }
@@ -150,38 +259,37 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: antiquewhite;
+    background-color: #ae6252;
 }
 
-.social-media {
-    margin-bottom: 25px;
-}
-
-.social-media a { /*enlaces*/
-    /*colores y tamaños de mis íconos*/
-    color: brown;
-    margin: 0 10px;
-    font-size: 24px;
-}
-
+/**Sección: newsletter*/
 .newsletter {
     text-align: center;
     margin-bottom: 20px;
+    background-color: #ae6252;
 }
 
-.newsletter input [type="e-mail"] {
+.newsletter input[type= "e-mail"] {
     padding: 8px;
-    border: 1px solid cornflowerblue;
+    border: 1px solid #854b3c;
     border-top-left-radius: 4px;
     margin-bottom: 10px;
-
 }
 
-.newsletter button [type="submit"] {
-    background-color: aliceblue;
-    color: #f4a261;
+.newsletter button[type= "submit"] {
+    background-color: #8d3f00;
     padding: 8px;
-    border: 2px solid black;
+    border: 2px solid #9c280b;
+    color: #160a05;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.newsletter button[type= "submit"]:hover {
+    background-color: #034F1B;
+    padding: 8px;
+    border: 2px solid #d86b3c;
+    color: #160a05;
     border-radius: 4px;
     cursor: pointer;
 }

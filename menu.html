@@ -14,10 +14,10 @@
                 <h1>Ameyalli Cafetería</h1>
             </div>
             <ul class="nav-links">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Menú</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#" onclick="redirigir('Ameyalli.html')">Inicio</a></li>
+                <li><a href="#" onclick="redirigir('menu.html')">Menú</a></li>
+                <li><a href="#" onclick="redirigir('nosotros.html')">Nosotros</a></li>
+                <li><a href="#" onclick="redirigir('contacto.html')">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -27,14 +27,12 @@
         <div class="hero-content">
             <h2>El mejor café de Orizaba</h2>
             <p>Disfruta de una experiencia única con nuestro café orgánico de la región de las Altas Montañas.</p>
-            <div class="contenedor-boton">
-                <button class="boton-menu">Ubicación</button>
             <div class="barra">
-                <ul class="nav-links">
-                    <li> <a href="#">Bebidas calientes</a></li>
-                    <li> <a href="#">Bebidas frías</a></li>
-                    <li> <a href="#">Postres</a></li>
-                    <li> <a href="#">Trenzas</a></li>
+                <ul class="nav-barras">
+                    <li> <a href="#bebidasca">Bebidas calientes</a></li>
+                    <li> <a href="#bebidasfr">Bebidas frías</a></li>
+                    <li> <a href="#post">Postres</a></li>
+                    <li> <a href="#comid">Trenzas</a></li>
                 </ul>
             </div>
             </div>
@@ -43,9 +41,9 @@
     </section>
 
     <!--BEBIDAS CAlIENTES-->
-    <section class="featured-products">
-        <h2>Bebidas</h2>
-        <div class="product-list">
+    <section class="bebidas1" id="bebidasca">
+        <h2>Bebidas calientes</h2>
+        <div class="calientes">
             <!--Bebida #1-->
             <div class="product">
                 <img src="https://www.foodandwine.com/thmb/9JyfZPcxlV9ubEeuSznhO-M4q0w=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Partners-Americano-FT-BLOG0523-b8e18cc340574cc9bed536cceeec7082.jpg" alt="bebida 1">
@@ -85,91 +83,134 @@
             </div>
         </div>
     </section>
+
+    <!--BEBIDAS FRÍAS-->
+    <section class="bebidas2" id="bebidasfr">
+        <h2>Bebidas frías</h2>
+        <div class="frías">
+            <!--Bebida #1-->
+            <div class="producto">
+                <img src="https://supercafeteros.com/wp-content/uploads/2021/07/frappe-con-sirope-chocolate-1280x1920.jpeg" alt="bebida 1">
+                <h3>Frappé Ameyalli</h3>
+                <p>Dulce bedida de café, cubierto de crema batida y chocolate líquido.</p>
+            </div>
+            <!--Bebida #2-->
+            <div class="producto">
+                <img src="https://www.linaje.com.mx/images/anis-negrobg.jpg" alt="bebida 2">
+                <h3>Cold brew</h3>
+                <p>Café frío infusionado durante horas, combinado con un toque de agua de coco.</p>
+            </div>
+            <!--Bebida #3-->
+            <div class="producto">
+                <img src="https://images.hola.com/imagenes/cocina/recetas/20190926150228/iced-coffee-con-helado-vainilla/0-724-441/icedcoffee-m.jpg" alt="bebida 3">
+                <h3>Mocha con helado</h3>
+                <p>Café con chocolate, acompañado de leche vaporizada fría y helado de vainilla.</p>
+            </div>
+            <!--Bebida #4-->
+            <div class="producto">
+                <img src="https://i.pinimg.com/originals/35/6a/be/356abeea77fa7a70844072e94347ee1b.jpg" alt="bebida 4">
+                <h3>Limonada con albahaca</h3>
+                <p>Bebida refrescante, perfecta para refrescar tu día.</p>
+            </div>
+            <!--Bebida #5-->
+            <div class="producto">
+                <img src="https://th.bing.com/th/id/OIP.fpgWQaHEiJ5-_tNvmfTbgAHaLH?rs=1&pid=ImgDetMain" alt="bebida 5">
+                <h3>Smoothie tropical de mango y piña</h3>
+                <p>Una mezcla suave y cremosa de mango y piña, con un toque de agua de coco.</p>
+            </div>
+            <!--Bebida #6-->
+            <div class="producto">
+                <img src="https://th.bing.com/th/id/OIP.EqdR1ZfJ11lHyN8wI3B2OAAAAA?rs=1&pid=ImgDetMain" alt="bebida 6">
+                <h3>Bubble tea de taro</h3>
+                <p>Malteada de taro con perlas de tapioca.</p>
+            </div>
+            </div>
+        </div>
+    </section>
     
     <!--POSTRES-->
-    <section class="postres">
+    <section class="postres" id="post">
         <h2>Nuestros deliciosos postres </h2>
         <div class="grid-container">
             <!--postre1-->
             <div class="postre">
-                <img src="https://bing.com/th?id=OSK.29191f4e9db24ae6ad9e861224865d4b" alt="fresas">
-                <h3>fresas con crema</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum amet labore voluptatibus rem exercitationem perspiciatis cumque. Dignissimos sed quidem laudantium facilis, veritatis expedita aliquam eos illo iste, repudiandae molestias nesciunt.</p>
+                <img src="https://thumbs.dreamstime.com/b/un-trozo-de-pastel-violeta-morado-con-lavanda-y-bayas-servidas-en-plato-blanco-sobre-fondo-tarta-cortada-delicioso-postre-dulce-223389782.jpg" alt="postre1">
+                <h3>Pastel de lavanda con zarzamora</h3>
+                <p>Bizcocho de tres leches infusionado con lavanda, combinado con el característico sabor de las berries.</p>
             </div>
             <!--postre2-->
             <div class="postre">
-                <img src="https://th.bing.com/th/id/OIP.cwoYm3U0K2Ms16Gp3uPGDgHaE7?rs=1&pid=ImgDetMain" alt="pastel">
-                <h3>pastel de chocolate</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum amet labore voluptatibus rem exercitationem perspiciatis cumque. Dignissimos sed quidem laudantium facilis, veritatis expedita aliquam eos illo iste, repudiandae molestias nesciunt.</p>
+                <img src="https://3.bp.blogspot.com/-a1Pi8Midw_c/VX4oLwVX-PI/AAAAAAAAANM/WEPCiAAzHqs/s1600/pie%2Bde%2Bmaracuya.jpg" alt="paostre2">
+                <h3>Pay de maracuyá</h3>
+                <p>Base de galleta con un relleno de queso crema y maracuyá.</p>
             </div>
             <!--postre3-->
             <div class="postre">
-                <img src="https://cdn.kiwilimon.com/recetaimagen/29890/31885.jpg" alt="gela">
-                <h3>gelatina de mango</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum amet labore voluptatibus rem exercitationem perspiciatis cumque. Dignissimos sed quidem laudantium facilis, veritatis expedita aliquam eos illo iste, repudiandae molestias nesciunt.</p>
+                <img src="https://img-global.cpcdn.com/recipes/309755d14d486342/680x482cq70/galletas-de-guayaba-foto-principal.jpg" alt="postre3">
+                <h3>Galletas de guayaba</h3>
+                <p>Deliciosas galletas de mantequilla con un relleno dulce de guayaba.</p>
             </div>
             <!--postre4-->
             <div class="postre">
-                <img src="https://cdn.kiwilimon.com/recetaimagen/29890/31885.jpg" alt="gela">
-                <h3>gelatina de mango</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum amet labore voluptatibus rem exercitationem perspiciatis cumque. Dignissimos sed quidem laudantium facilis, veritatis expedita aliquam eos illo iste, repudiandae molestias nesciunt.</p>
+                <img src="https://www.seriouseats.com/thmb/4q_UkVmkHS9wKTYDo44OGb0d70g=/960x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__recipes__images__2011__07__20110722-127677-Dulces-Torta-Elotes-PRIMARY-a35cacabdbc94094ac1a89eead8b599d.jpg" alt="postre4">
+                <h3>Torta de elote</h3>
+                <p>Suave, casera y esponjosa, el delicioso sabor del elote te encantará.</p>
             </div>
             <!--postre5-->
             <div class="postre">
-                <img src="https://cdn.kiwilimon.com/recetaimagen/29890/31885.jpg" alt="gela">
-                <h3>gelatina de mango</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum amet labore voluptatibus rem exercitationem perspiciatis cumque. Dignissimos sed quidem laudantium facilis, veritatis expedita aliquam eos illo iste, repudiandae molestias nesciunt.</p>
+                <img src="https://barefeetinthekitchen.com/wp-content/uploads/2023/03/Lunch-Lady-Brownies-BFK-12-1-of-1-1536x1024.jpg" alt="postre5">
+                <h3>Brownies con crema de avellanas</h3>
+                <p>Intenso sabor de chocolate, enriquecidos con crema de avellana y chocolate amargo.</p>
             </div>
             <!--postre6-->
             <div class="postre">
-                <img src="https://cdn.kiwilimon.com/recetaimagen/29890/31885.jpg" alt="gela">
-                <h3>gelatina de mango</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum amet labore voluptatibus rem exercitationem perspiciatis cumque. Dignissimos sed quidem laudantium facilis, veritatis expedita aliquam eos illo iste, repudiandae molestias nesciunt.</p>
+                <img src="https://www.cadenadial.com/wp-content/uploads/2018/11/churros_rellenos.jpg" alt="postre6">
+                <h3>Churros rellenos</h3>
+                <p>Dorados en su punto exacto, crujientes y suaves, acompañados de lechera, cajeta, manjar, mermelada o chocolate.</p>
             </div>
         </div>
     </section>
 
-    <section class="equipo">
-        <h2>Nuestro equipo</h2>
-        <div class="equipo-container">
-            <!--miembro 1-->
-            <div class="miembro">
-                <img src="https://blogstudio.s3.theshoppad.net/coffeeheroau/d4459a5d44905ff2cf3c245e7a931675.jpg" alt="barista">
-                <h3>Uri de Jesús</h3>
-                <p>Barista</p>
+    <section class="comida" id="comid">
+        <h2>Trenzas</h2>
+        <div class="trenzas">
+            <!--trenza 1-->
+            <div class="pan">
+                <img src="https://cdn6.recetasdeescandalo.com/wp-content/uploads/2017/04/Receta-de-trenza-de-hojaldre-rellena-de-jamon-queso-y-puerros.jpg" alt="trenza">
+                <h3>Trenza del barrio</h3>
+                <p>Jamón de calidad, queso de hebra y queso amarillo.</p>
             </div>
-            <!--miembro 2-->
-            <div class="miembro">
-                <img src="https://th.bing.com/th/id/OIP.sDDnVHzSzhmezJDHZBBKgAHaE8?rs=1&pid=ImgDetMain" alt="mesera">
-                <h3>Giannina</h3>
-                <p>Mesera</p>
+            <!--trenza 2-->
+            <div class="pan">
+                <img src="https://img.juanideanasevilla.com/archivos/recetas/recetas_trenza-de-pollo-al-chilindron1_1590894676.jpg" alt="trenza3">
+                <h3>Trenza de pollo</h3>
+                <p>Pollo marinado con salsa chipotle, queso crema y especias.</p>
             </div>
-            <!--miembro 3-->
-            <div class="miembro">
-                <img src="https://www.heraldo.es/uploads/imagenes/2014/06/11/_imagenlacafeteria_c2b3c775.jpg" alt="chef">
-                <h3>Ángel Eduardo</h3>
-                <p>Chef</p>
+            <!--trenza 3-->
+            <div class="pan">
+                <img src="https://th.bing.com/th/id/OIP.NUwxGTh6g5EM4KYgB6iojwHaEQ?rs=1&pid=ImgDetMain" alt="trenza4">
+                <h3>Trenza primavera</h3>
+                <p>Verduras asadas acompañadas de queso jarocho.</p>
             </div>
-        </div>
+            </div>
+    <!--miembro 5-->
+    <div class="video">
+        <iframe width="315" height="315" src="https://www.youtube.com/embed/o7_esiOxVK4?si=IExqoBWaQlMpUplx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h3>También contamos con deliciosos volovanes de temporada, pregunta por nuestro sabores disponibles en nuestro establecimiento o en nuestras redes sociales.</h3>
+        <p>Créditos al respectivo autor del video.</p>
+    </div>
     </section>
 
     <footer>
-        <div class="footer-container">
-            <div class="social media">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-facebook"></i></a>
-            </div> 
-            <div class="newsletter">
-                <h3>Suscribete a...</h3>
-                <form action="">
-                    <input type="email" placeholder="ingresa tu correo" required>
-                    <button type="submit">suscribirse</button>
-                </form>
-            </div>
+        <div class="newsletter">
+            <h3>¡Suscríbete para obtener un 10% de descuento en nuestro menú!</h3>
+            <form action="">
+                <input type="email" placeholder="Ingresa tu correo" required>
+                <button type="submit">Enviar</button>
+            </form>
         </div>
-        <p>&copy; 2024 Ameyalli</p>
-    </footer>
+    </div>
+    <p>2024 Ameyalli, página elaborada por Ivanna Serrano Utrera</p>
     <script src="main.js"></script>
 </body>
 </html>

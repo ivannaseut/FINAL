@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Menu</title>
+    <title>Ameyalli Cafetería</title>
+    <link rel="shortcut icon" href="img/Ameyalli.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/nosotros.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
 </head>
 <body>
     <header>
@@ -13,79 +15,83 @@
                 <h1>Ameyalli Cafetería</h1>
             </div>
             <ul class="nav-links">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Menú</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#" onclick="redirigir('Ameyalli.html')">Inicio</a></li>
+                <li><a href="#" onclick="redirigir('menu.html')">Menú</a></li>
+                <li><a href="#" onclick="redirigir('nosotros.html')">Nosotros</a></li>
+                <li><a href="#" onclick="redirigir('contacto.html')">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
     <section class="hero">
         <div class="hero-content">
-            <h2>El mejor café de Orizaba</h2>
-            <p>Disfruta de una experiencia única con nuestro café orgánico de la región de las Altas Montañas.</p>
+            <h2>¡El mejor café de Orizaba!</h2>
+            <p>Gracias por su interés en saber más sobre Ameyalli. En este espacio le contaremos quiénes están detrás de este gran equipo de trabajo. Estamos creando un mejor ambiente para nuestros clientes, agradecemos su preferencia.</p>
             <div class="contenedor-boton">
-                <button class="boton-menu">Ver Menú</button>
+                <button class="boton-menu" id="ubicacion-boton">Ubicación</button>
+                <script>
+                    document.getElementById("ubicacion-boton").addEventListener("click", function () {
+                        window.open("https://www.google.com.mx/maps/place/Cafeter%C3%ADa+y+librer%C3%ADa+Ameyalli/@18.8433794,-97.1024234,17z/data=!4m15!1m8!3m7!1s0x85c5031b2077091f:0xb0986bc5318a60f5!2sCafeter%C3%ADa+y+librer%C3%ADa+Ameyalli!8m2!3d18.843423!4d-97.1024519!10e5!16s%2Fg%2F11k4_6lpnn!3m5!1s0x85c5031b2077091f:0xb0986bc5318a60f5!8m2!3d18.843423!4d-97.1024519!16s%2Fg%2F11k4_6lpnn?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D", "_blank");});
+                </script>
             </div>
-            
         </div>
     </section>
 
-    <section class="sandwiches">
-        <h2>Nuestros Sandwiches</h2>
-        <div class="grid-sandwich">
+<!--NOSOTROS -->
+<section class="about-us">
+    <div class="info">
+        <h2>¿Quiénes Somos?</h2>
+        <p class="intro">
+            Ameyalli Cafetería es un espacio creado con el corazón, donde la pasión por el café y los productos artesanales se combinan con el deseo de ofrecer una experiencia única y cálida. Nuestro objetivo es brindarte un ambiente perfecto para disfrutar de cada momento con amigos, familia o en solitario, siempre acompañado de un buen café y deliciosos postres.</p>
+    </div>
+    <div class="info">
+        <h2>¿Cómo surgimos?</h2>
+        <p>Ameyalli nace de la idea de ofrecer a todos los amantes del café y la repostería una alternativa única en la ciudad. Nos inspiramos en la necesidad de un lugar donde se fusionaran los sabores tradicionales con un toque minimalista y confortable. Desde su apertura, nos hemos dedicado a crear un espacio para conocer a Dios, donde puedas relajarte y disfrutar el espacio que hemos creado para ti.</p>
+    </div>
+    <div class="info">
+            <h2>¿Dónde estamos ubicados?</h2>
+                <p>Nos encontramos ubicados el pueblo mágico de Orizaba, Veracruz: Oriente 12, #40, Colonia Centro, C.P. 94300.</p>
+    </div>
+</section>
 
-            <div class="sandwich"> 
-                <img src="https://images.aws.nestle.recipes/original/0dcdbe631b092077fd7e411236c4b06d_sandwich_de_pollo_a_las_finas_hierbas_-_mx_ponte_bien.jpg" alt="">
-                <h3>Sandwich de Pollo</h3>
-                <p>Lorem ipsum dolor, </p>
+
+<!--PERSONAL-->
+    <section class="equipo">
+        <h2>Nuestro equipo</h2>
+        <div class="equipo-container">
+            <!--miembro 1-->
+            <div class="miembro">
+                <img src="https://img.freepik.com/premium-photo/handsome-barista-man-work-his-movable-street-coffee-shop_144962-11622.jpg" alt="barista">
+                <h3>Uri</h3>
+                <p>Barista</p>
             </div>
-
-            <div class="sandwich"> 
-                <img src="https://images.aws.nestle.recipes/original/0dcdbe631b092077fd7e411236c4b06d_sandwich_de_pollo_a_las_finas_hierbas_-_mx_ponte_bien.jpg" alt="">
-                <h3>Sandwich de Pollo</h3>
-                <p>Lorem ipsum dolor, </p>
+            <!--miembro 2-->
+            <div class="miembro">
+                <img src="https://th.bing.com/th/id/OIP.9SwzzUbx3hf-qekkn1aL4QHaE8?w=900&h=600&rs=1&pid=ImgDetMain" alt="mesera">
+                <h3>Giannina y Santiago</h3>
+                <p>Meseros</p>
             </div>
-
-            <div class="sandwich"> 
-                <img src="https://images.aws.nestle.recipes/original/0dcdbe631b092077fd7e411236c4b06d_sandwich_de_pollo_a_las_finas_hierbas_-_mx_ponte_bien.jpg" alt="">
-                <h3>Sandwich de Pollo</h3>
-                <p>Lorem ipsum dolor, </p>
+            <!--miembro 3-->
+            <div class="miembro">
+                <img src="https://th.bing.com/th/id/OIP.iC1VP9GISZlxoCeB1gI-DgAAAA?w=300&h=200&rs=1&pid=ImgDetMain" alt="chef">
+                <h3>Ángel y Alison</h3>
+                <p>Cocineros</p>
             </div>
-
-            <div class="sandwich"> 
-                <img src="https://images.aws.nestle.recipes/original/0dcdbe631b092077fd7e411236c4b06d_sandwich_de_pollo_a_las_finas_hierbas_-_mx_ponte_bien.jpg" alt="">
-                <h3>Sandwich de Pollo</h3>
-                <p>Lorem ipsum dolor,</p>
-            </div>
-
-            <div class="sandwich"> 
-                <img src="https://images.aws.nestle.recipes/original/0dcdbe631b092077fd7e411236c4b06d_sandwich_de_pollo_a_las_finas_hierbas_-_mx_ponte_bien.jpg" alt="">
-                <h3>Sandwich de Pollo</h3>
-                <p>Lorem ipsum dolor,</p>
-            </div>
-
         </div>
     </section>
 
     <footer>
-        <div class="footer-container">
-            <div class="social media">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-facebook"></i></a>
-            </div> 
-            <div class="newsletter">
-                <h3>Suscribete a...</h3>
-                <form action="">
-                    <input type="email" placeholder="ingresa tu correo" required>
-                    <button type="submit">suscribirse</button>
-                </form>
-            </div>
+        <div class="newsletter">
+            <h3>¡Suscríbete para obtener un 10% de descuento en nuestro menú!</h3>
+            <form action="">
+                <input type="email" placeholder="Ingresa tu correo" required>
+                <button type="submit">Enviar</button>
+            </form>
         </div>
-        <p>&copy; 2024 Ameyalli</p>
-    </footer>
-    <script src="main.js"></script>
+    <p>2024 Ameyalli, página elaborada por Ivanna Serrano Utrera</p>
+</footer>
+
+<!--enlazando archivo de javascript-->
+<script src="main.js"></script>
 </body>
 </html>

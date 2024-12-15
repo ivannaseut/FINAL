@@ -1,0 +1,205 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #59392b;
+    color: #EED9C4;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    background-color: #59392b;
+    color: #EED9C4;
+    padding: 15px 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.navbar:hover {
+    background-color: #4a2d1f;
+}
+
+.nav-links {
+    list-style: none; /*Quitar viñetas*/
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    margin-inline-start: 30vh;
+}
+
+.nav-links li a {
+    color: #EED9C4;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #db6607;
+}
+
+/*Estilos, sección: hero*/
+.hero {
+    background-image: url("https://blog.grancoffee.com.br/wp-content/uploads/sites/2/2020/06/20506_BlogPost_imagem_interna_4-1024x373.png");
+    background-size: cover;
+    text-align: center;
+    color: #59392b;
+    padding: 100px 0;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    background-color: #EED9C4;
+    margin-bottom: 20px;   
+}
+
+.hero p {
+
+    font-size: 1.2rem;
+    background-color: #EED9C4;
+    margin-bottom: 20px;   
+    padding: 5px;
+}
+
+.contenedor-boton {
+    padding-top: 35px;
+}
+
+.boton-menu {
+    margin: 15px;
+    padding: 5px;
+    border-radius: 56px;
+    background-color: #59392b;
+    color: #EED9C4;
+}
+
+/* Sección: redes sociales */
+.redes-sociales {
+    background-color: #EED9C4; 
+    text-align: center;
+    padding: 50px 20px;
+    margin-top: 30px;
+}
+
+.redes-sociales h2 {
+    font-size: 2rem;
+    color: #59392b;
+    margin-bottom: 30px;
+}
+
+.social-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.social-list li {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 100px; 
+    height: 100px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-list li:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.social-list a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #59392b;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-list a i {
+    font-size: 2rem; /* Aumenté el tamaño del icono */
+    margin-bottom: 5px;
+    color: #db6607;
+    transition: color 0.3s ease;
+}
+
+.social-list li:hover a i {
+    color: #e68a00;
+}
+
+.social-list li:hover a {
+    color: #7b3f11;
+}
+
+
+/*Estilos de pie de página*/
+footer {
+    background-color: #ae6252;
+    color: #EED9C4;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ae6252;
+}
+
+/**Sección: newsletter*/
+.newsletter {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #ae6252;
+}
+
+.newsletter input[type= "e-mail"] {
+    padding: 8px;
+    border: 1px solid #854b3c;
+    border-top-left-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.newsletter button[type= "submit"] {
+    background-color: #8d3f00;
+    padding: 8px;
+    border: 2px solid #9c280b;
+    color: #160a05;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.newsletter button[type= "submit"]:hover {
+    background-color: #034F1B;
+    padding: 8px;
+    border: 2px solid #d86b3c;
+    color: #160a05;
+    border-radius: 4px;
+    cursor: pointer;
+}

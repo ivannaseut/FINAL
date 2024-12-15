@@ -2,6 +2,6 @@
 
 /*Nota: este comentario es multilínea*/ 
 
-function redirigir (url) {
+function redirigir(url) {
     window.location.href = url;
 }

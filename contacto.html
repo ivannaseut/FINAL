@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Menu</title>
+    <title>Ameyalli Cafetería</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/Ameyalli.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/contacto.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
 </head>
 <body>
     <header>
@@ -13,78 +16,62 @@
                 <h1>Ameyalli Cafetería</h1>
             </div>
             <ul class="nav-links">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Menú</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#" onclick="redirigir('Ameyalli.html')">Inicio</a></li>
+                <li><a href="#" onclick="redirigir('menu.html')">Menú</a></li>
+                <li><a href="#" onclick="redirigir('nosotros.html')">Nosotros</a></li>
+                <li><a href="#" onclick="redirigir('contacto.html')">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
     <section class="hero">
         <div class="hero-content">
-            <h2>El mejor café de Orizaba</h2>
-            <p>Disfruta de una experiencia única con nuestro café orgánico de la región de las Altas Montañas.</p>
+            <h2>¡El mejor café de Orizaba!</h2>
+            <p>Síguenos en nuestras redes sociales para no perderte ninguna de nuestras promociones.</p>
             <div class="contenedor-boton">
-                <button class="boton-menu">Ver Menú</button>
+                <button class="boton-menu" id="ubicacion-boton">Ubicación</button>
+                <script>
+                    document.getElementById("ubicacion-boton").addEventListener("click", function () {
+                        window.open("https://www.google.com.mx/maps/place/Cafeter%C3%ADa+y+librer%C3%ADa+Ameyalli/@18.8433794,-97.1024234,17z/data=!4m15!1m8!3m7!1s0x85c5031b2077091f:0xb0986bc5318a60f5!2sCafeter%C3%ADa+y+librer%C3%ADa+Ameyalli!8m2!3d18.843423!4d-97.1024519!10e5!16s%2Fg%2F11k4_6lpnn!3m5!1s0x85c5031b2077091f:0xb0986bc5318a60f5!8m2!3d18.843423!4d-97.1024519!16s%2Fg%2F11k4_6lpnn?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D", "_blank");});
+                </script>
             </div>
-            
         </div>
     </section>
 
-    <section class="sandwiches">
-        <h2>Nuestros Sandwiches</h2>
-        <div class="grid-sandwich">
-
-            <div class="sandwich"> 
-                <img src="https://images.aws.nestle.recipes/original/0dcdbe631b092077fd7e411236c4b06d_sandwich_de_pollo_a_las_finas_hierbas_-_mx_ponte_bien.jpg" alt="">
-                <h3>Sandwich de Pollo</h3>
-                <p>Lorem ipsum dolor, </p>
-            </div>
-
-            <div class="sandwich"> 
-                <img src="https://images.aws.nestle.recipes/original/0dcdbe631b092077fd7e411236c4b06d_sandwich_de_pollo_a_las_finas_hierbas_-_mx_ponte_bien.jpg" alt="">
-                <h3>Sandwich de Pollo</h3>
-                <p>Lorem ipsum dolor, </p>
-            </div>
-
-            <div class="sandwich"> 
-                <img src="https://images.aws.nestle.recipes/original/0dcdbe631b092077fd7e411236c4b06d_sandwich_de_pollo_a_las_finas_hierbas_-_mx_ponte_bien.jpg" alt="">
-                <h3>Sandwich de Pollo</h3>
-                <p>Lorem ipsum dolor, </p>
-            </div>
-
-            <div class="sandwich"> 
-                <img src="https://images.aws.nestle.recipes/original/0dcdbe631b092077fd7e411236c4b06d_sandwich_de_pollo_a_las_finas_hierbas_-_mx_ponte_bien.jpg" alt="">
-                <h3>Sandwich de Pollo</h3>
-                <p>Lorem ipsum dolor,</p>
-            </div>
-
-            <div class="sandwich"> 
-                <img src="https://images.aws.nestle.recipes/original/0dcdbe631b092077fd7e411236c4b06d_sandwich_de_pollo_a_las_finas_hierbas_-_mx_ponte_bien.jpg" alt="">
-                <h3>Sandwich de Pollo</h3>
-                <p>Lorem ipsum dolor,</p>
-            </div>
-
-        </div>
+    <section class="redes-sociales">
+        <h2>¡Síguenos en nuestras redes!</h2>
+        <ul class="social-list">
+            <li>
+                <a href="https://www.facebook.com/people/Cafeteria-y-librer%C3%ADa-Ameyalli/100088735043616/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i> Facebook
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/ameyalli.libreria.cafeteria/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i> Instagram
+                </a>
+            </li>
+            <li>
+                <a href="tel:+522721374957">
+                    <i class="fa-solid fa-phone"></i> Teléfono
+                </a>
+            </li>
+        </ul>
     </section>
 
     <footer>
-        <div class="footer-container">
-            <div class="social media">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-facebook"></i></a>
-            </div> 
-            <div class="newsletter">
-                <h3>Suscribete a...</h3>
-                <form action="">
-                    <input type="email" placeholder="ingresa tu correo" required>
-                    <button type="submit">suscribirse</button>
-                </form>
-            </div>
+        <div class="newsletter">
+            <h3>¡Suscríbete para obtener un 10% de descuento en nuestro menú!</h3>
+            <form action="">
+                <input type="email" placeholder="Ingresa tu correo" required>
+                <button type="submit">Enviar</button>
+            </form>
         </div>
-        <p>&copy; 2024 Ameyalli</p>
-    </footer>
+    </div>
+    <p>2024 Ameyalli, página elaborada por Ivanna Serrano Utrera</p>
+</footer>
+
+<!--enlazando archivo de javascript-->
+<script src="main.js"></script>
 </body>
 </html>
